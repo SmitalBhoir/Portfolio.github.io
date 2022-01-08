@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
+* {
+  box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing:border-box;
+    text-decoration:none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.max-width{
+    max-width: 1300px;
+    padding:0 80px;
+    margin:auto;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999 ;
+    padding: 30px 0; 
+    font-family:'Ubuntu',sans-serif ;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: black;
+}
+.navbar .max-width{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color:white;
+    font-size:35px ;
+    font-weight: 600;
+}
+
+.navbar .logo a span{
+    color: rgb(193, 106, 219);
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: white; 
+ }
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color:whitesmoke;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color:springgreen;
+}
+.navbar.sticky.menu li a:hover{
+    color: white;
+}
+/*MENU BUTTON DESIGNING */
+.menu-btn{
+    color:white;
+    font-size: 23px;
+    cursor: pointer;
+    left: 20%;
+}
+
+.Home{
+    display: flex;
+    background: url("homesmi.jpg") no-repeat center;
+    height: 100vh;
+    color:aliceblue;
+    min-height: 500px;
+    font-family:'Ubuntu',sans-serif 
+}
+.Home .max-width{
+   
+    margin: auto 0 auto 40px;
+
+}
+.Home .Home-content .text-1{
+    font-size: 27px;
+}
+.Home .Home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+
+
+}
+
+.Home .Home-content .text-3{
+    font-size: 50px;
+    margin: 5px 0;
+
+}
+.Home .Home-content a{
+    font-size: 23px;
+    padding:10px 30px;
+}
+
+.about .Home-content a .column{
+
+width:50% ;
+}
+ .Home .Home-content .text-3 span{
+     color:springgreen;
+     font-weight: 500;
+ }
+ .Home .Home-content a{
+     display: inline-block;
+     background:springgreen;
+    color: white;
+    font-size:25px;
+    padding:12px 35px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border:2px solid springgreen;
+    transition: all 0.3s ease;
+
+
+ }
+ .Home .Home-content a:hover{
+     color: white;
+     background: none;
+ }
+  /* ABOUTSECTION*/
+ section{
+     padding: 100px 0;
+    ;
+ }
+.about{
+    background:rgb(15, 3, 43);
+}
+
+ .about , .services, .skills, .projects{
+     font-family: 'Poppins',sans-serif;
+ }
+ .about .title {
+     text-align: center;
+     font-size: 40px;
+     color: white;
+     font-weight: 500;
+     margin-bottom: 60px;
+     padding-bottom: 20px;
+     font-family: 'Ubuntu',sans-serif;
+ }
+ 
+ 
+ .about .about-content{
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .about .about-content .left{
+     width: 45%;
+ }
+ .about .about-content .left img{
+     height: 400px;
+     width: 400px;
+     object-fit: cover;
+     border-radius: 8px;
+    
+background-size: cover;
+ }
+ .about .about-content .right{
+    width: 45%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+
+}
+.about .about-content .right .text span{
+    color: springgreen;
+}
+.about .about-content .right p{
+    text-align: justify;
+    color: white;
+}
+.about .about-content .right a{
+   
+        display: inline-block;
+        background:springgreen;
+       color: white;
+       font-size:20px;
+       padding:10px 30px;
+       margin-top: 20px;
+       border-radius: 6px;
+       border:2px solid springgreen;
+       transition: all 0.3s ease;
+   
+   
+    }
+    .about .about-content .right a:hover{
+        color: springgreen;
+        background : none;
+    }
+
+
+
+    /*skills  section*/
+
+
+    .skills{
+
+        background: white;
+    }
+    .skills .title{
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+        font-family: 'Ubuntu',sans-serif;
+    }
+
+    
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+
+}
+
+.skills .skills-content .right .bars{
+
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .bars .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+
+    height:5px;
+    width:100%;
+    background: lightgray;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left:0;
+    top:0;
+    background: springgreen;
+
+}
+.skills .skills-content .right .html::before{
+    width: 90%;
+
+}
+.skills .skills-content .right .css::before{
+    width: 80%;
+
+}
+.skills .skills-content .right .javascript::before{
+    width: 80%;
+
+
+}
+
+.skills .skills-content .right .reactjs::before{
+    width: 70%;
+
+}
+.skills .skills-content .right .mysql::before{
+    width: 90%;
+
+
+}
+.skills .skills-content .right .php::before{
+    width: 75%;
+
+}
+
+/*projects section*/
+
+
+
+.projects{
+
+background: yellowgreen;
+
+}
+.projects .title{
+    text-align: center;
+    font-size: 40px;
+    color:black;
+    font-weight: 500;
+   margin-left: 9rem;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.projects .container{
+    display: flex;
+    gap: 2rem;
+}
+
+
+.animated { 
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-top:30px;
+    margin-bottom:40px;
+    margin-left: 5rem;
+    margin-right: 3rem;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s; 
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; 
+ }
+ 
+ @-webkit-keyframes bounceIn {
+    0% {
+       opacity: 0;
+       -webkit-transform: scale(.3);
+    }
+    50% {
+       opacity: 1;
+       -webkit-transform: scale(1.05);
+    }
+    70% {
+       -webkit-transform: scale(.9);
+    }
+    
+ }
+ 
+ @keyframes bounceIn {
+    0% {
+       opacity: 0;
+       transform: scale(.3);
+    }
+    50% {
+       opacity: 1; 
+       transform: scale(1.05);
+    }
+    70% {
+       transform: scale(.9);
+    }
+ }
+ 
+ .bounceIn {
+    -webkit-animation-name: bounceIn; 
+    animation-name: bounceIn;
+ }
+
+    /*service section*/
+    .services{
+        background:white;
+    }
+
+    .services .container{
+        display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+    }
+   
+    .services .title{
+
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+        font-family: 'Ubuntu',sans-serif;
+    }
+   
+    .services .container .box{
+ flex:1 1 30rem;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  border:.1rem solid rgba(0,0,0,.3);
+  cursor: pointer;
+  border-radius: .5rem;
+}
+.services .container .box .image{
+    height:100%;
+  width:100%;
+  object-fit: cover;
+  position: absolute;
+  top:-100%; left:0;
+}   
+
+.services .container .box .content{
+    text-align: center;
+    background: #fff;
+    padding: 2rem;
+}
+
+.services .container .box .content h3{
+    font-size: 2rem;
+    color: #333;
+}
+
+.services .container .box .content p{
+    font-size: 1rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.services .container .box:hover .image{
+    top: 0;
+}
+
+.services .container .box:hover .content{
+    transform: translateY(100%);
+}
+
+
+   /*contact section*/
+
+   .contact{
+       font-family: 'Poppins',sans-serif; 
+       background:rgb(201, 188, 171);
+   }
+
+   .contact .title{
+       text-align: center;
+       font-size: 40px;
+       font-weight: 500;
+       margin-bottom: 60px;
+       padding-bottom: 20px;
+
+   }
+
+   .contact  .contact-content .column{
+    width: calc(50% - 30px);
+   }
+
+   .contact  .contact-content  .text{
+       font-size: 20px;
+       font-weight: 600;
+       margin-bottom: 20px;
+     
+   }
+
+   .contact .contact-content .head{
+       font-size: 20px;
+       font-weight: 600;
+       margin-bottom: 5px;
+       margin-top: 5px;
+   }
+
+   .contact .contact-content .left p{
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content.row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+
+.contact .contact-content .info i{
+    font-size: 25px;
+    color: springgreen;
+}
+
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+
+.contact .right form .fields{
+
+    display: flex;
+
+   
+    
+}
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .email{
+    margin-left: 10px;
+
+}
+.contact .right form .field input , .contact .right form .textarea textarea{
+    height: 100%;
+    width:100%;
+    border: 3px solid lightgray;
+    border-radius: 8px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins',sans-serif;
+
+}
+
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .button{
+    height: 47px;
+    width:170%;
+}
+.contact .right form .button button{
+
+width: 100%;
+height: 100%;
+border: 2px solid springgreen;
+background: springgreen;
+color:#fff;
+font-size: 20px;
+font-weight: 500;
+border-radius: 6px;
+cursor:pointer;
+transition: all 0.3 ease;
+
+}
+
+.contact .right form .button button:hover{
+    color:springgreen;
+    background: none;
+}
+    
+/*footer*/
+.footer.content{
+    text-align: center;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-twitter{
+      color: blue;
+  }
+
+  .fa-facebook {
+    
+    color:blue;
+  }
+
+  .fa-google {
+    
+    color: blue;
+  }
+  
+  .fa-linkedin {
+
+    color:blue;
+  }
+
+  .fa-instagram {
+    
+    color: blue;
+  }
+
+@media (max-width:1330px){
+    .home .max-width{
+        margin-left: 0px;
+
+    }
+}
+@media (max-width:1104px){
+
+       .about .about-content .left img{
+
+       height:350px;
+       width:350px;
+    }
+}
+.services.serv-content .card, .skills .skills-content.column{
+
+    width:100%;
+
+
+}
+
+@media (max-width:991px){
+    .max-width{
+        padding:0 50px;
+
+    }
+}
+
+footer{
+    background: #111;
+    padding : 20px 23px;
+    color: white;
+
+}
+
+footer span a{
+    color:springgreen;
+    text-decoration: none;
+}
+footer span a :hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
